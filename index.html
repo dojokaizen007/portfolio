@@ -3,36 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyash Khanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png"> 
     <style>
-        body,
-        html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            font-family: 'Sen', sans-serif;
+            background-color: #252526;
+            color: #333;
         }
 
-        .background {
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            border: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .title {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .top-skills {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .about {
+                font-size: 16px;
+            }
+
+            .top-skills {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <script>
-        window.onload = function () {
-            var background = document.createElement('p');
-            background.classList.add('background');
-            background.style.backgroundImage = "url('https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
-            document.body.appendChild(background);
-        };
-    </script>
+    <div class="container">
+        <img src="profile.jpg" alt="Avatar" class="profile-image" oncontextmenu="return false;">
+        <h2 class="title">Hi, I’m Piyash</h2>
+        <p class="about">I'm a coding aficionado, specializing in back-end development, API security, and database
+            management. My passion lies in designing and engineering robust systems.</p>
+        <h3 class="top-skills">Top Skills</h3>
+        <p class="top-skills">C# . ASP.NET . PostgreSQL . Redis . AWS . Docker . Encryption Algorithms . Grafana</p>
+    </div>
 </body>
 </html>
